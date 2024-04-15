@@ -1,6 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:solar/Public/Constant.dart';
+import 'package:solar/Route/route_name.dart';
 import 'package:solar/Utility/Header.dart';
 import 'package:solar/Utility/iconsection.dart';
 import 'package:solar/Utility/footersection.dart';
@@ -121,12 +123,13 @@ class _HomeState extends State<Home> {
                                 const SizedBox(height: 20.0),
                                 ElevatedButton(
                                   onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              const UnitFree()),
-                                    );
+                                    // Navigator.push(
+                                    //   context,
+                                    //   MaterialPageRoute(
+                                    //       builder: (context) =>
+                                    //           const UnitFree()),
+                                    // );
+                                    Get.toNamed(unitfreeScreen);
                                   },
                                   style: ElevatedButton.styleFrom(
                                     shape: RoundedRectangleBorder(
@@ -512,12 +515,7 @@ class _HomeState extends State<Home> {
                                 const SizedBox(height: 20.0),
                                 ElevatedButton(
                                   onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              const UnitFree()),
-                                    );
+                                   Get.toNamed(unitfreeScreen);
                                   },
                                   style: ElevatedButton.styleFrom(
                                     foregroundColor: Colors.white,
